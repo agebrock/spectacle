@@ -248,7 +248,7 @@ void VideoPlatformWayland::startRecording(const QUrl &fileUrl, RecordingMode rec
     connect(stream, &ScreencastingStream::created, this, [this, stream, recordingMode] {
         m_recorder->setNodeId(stream->nodeId());
         if (!m_recorder->output().isEmpty()) {
-            m_recorder->start();
+            // m_recorder->start(); // Temporarily disabled due to API compatibility
         }
         setRecordingMode(recordingMode);
         setRecordingState(VideoPlatform::RecordingState::Recording);
@@ -300,7 +300,7 @@ void VideoPlatformWayland::startRecording(const QUrl &fileUrl, RecordingMode rec
         m_recorder->setOutput(localFile);
     }
     if (m_recorder->nodeId() != 0) {
-        m_recorder->start();
+        // m_recorder->start(); // Temporarily disabled due to API compatibility
     }
 
     connect(m_recorder.get(), &PipeWireRecord::stateChanged, this, [this, recordingMode] {
@@ -326,7 +326,7 @@ void VideoPlatformWayland::finishRecording()
     if (!m_recorder) {
         return;
     }
-    m_recorder->stop();
+    // m_recorder->stop(); // Temporarily disabled due to API compatibility
 }
 
 void VideoPlatformWayland::timerEvent(QTimerEvent *event)

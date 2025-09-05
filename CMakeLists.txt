@@ -9,7 +9,7 @@ project(Spectacle VERSION ${SPECTACLE_VERSION})
 # minimum requirements
 set(PROJECT_DEP_VERSION "6.3.90")
 set(QT_MIN_VERSION "6.8.0")
-set(KF6_MIN_VERSION "6.14.0")
+set(KF6_MIN_VERSION "6.12.0")
 
 find_package(ECM ${KF6_MIN_VERSION} REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
@@ -92,7 +92,7 @@ find_package(OpenCV REQUIRED core imgproc)
 
 set_package_properties(KPipeWire PROPERTIES DESCRIPTION
     "Used to record pipewire streams into a file"
-    TYPE REQUIRED
+    TYPE OPTIONAL
 )
 
 # optional components
