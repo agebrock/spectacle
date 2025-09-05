@@ -3,6 +3,24 @@
 Spectacle is a screenshot taking utility for the KDE desktop. Spectacle
 can also be used in non-KDE X11 desktop environments.
 
+## Annotation Tool Keyboard Shortcuts
+
+When in annotation mode, you can use the following keyboard shortcuts to quickly switch between annotation tools:
+
+- **S** - Select tool
+- **F** - Freehand tool
+- **H** - Highlighter tool
+- **L** - Line tool
+- **A** - Arrow tool
+- **R** - Rectangle tool
+- **E** - Ellipse tool
+- **B** - Blur tool
+- **P** - Pixelate tool
+- **T** - Text tool
+- **N** - Number tool
+
+These shortcuts work when you have an image open in annotation mode, allowing for quick tool switching without using the mouse.
+
 ## Contributing
 
 Spectacle is developed under the KDE umbrella and uses KDE infrastructure
