@@ -48,7 +48,6 @@ AnnotationViewport {
         sequences: [StandardKey.Redo]
         onActivated: root.document.redo()
     }
-gold12
     // Annotation tool keyboard shortcuts
     // Select tool - S key
     Shortcut {
